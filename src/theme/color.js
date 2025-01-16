@@ -1,0 +1,30 @@
+export const gray = {
+  white: "#FFFFFF",
+  1: "#F9F9F9",
+  2: "#E1E1E1",
+  3: "#EDEDED",
+  4: "#CBCBCB",
+  5: "#ADADAD",
+  6: "#757575",
+  7: "#717171",
+  8: "#353535",
+  black: "#0C0C0C",
+};
+
+export const shades = {
+  tint1: "#E5F2E9",
+  tint2: "#CAE4D3",
+  tint3: "#B0D7BD",
+  tint4: "#96C9A7",
+  tint5: "#7CBC91",
+  tint6: "#61AE7B",
+  tint7: "#4E9968",
+  primary: "#417F56",
+  shade1: "#396F4B",
+  shade2: "#315F41",
+  shade3: "#294F36",
+  shade4: "#21402B",
+  shade5: "#183020",
+  shade6: "#102016",
+  shade7: "#08100B",
+};
