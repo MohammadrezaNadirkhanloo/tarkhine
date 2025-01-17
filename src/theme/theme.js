@@ -3,6 +3,7 @@
 import { createTheme } from "@mui/material/styles";
 import { gray, shades } from "./color";
 
+
 export const theme = createTheme({
   direction: "rtl",
   typography: {
@@ -29,6 +30,7 @@ export const theme = createTheme({
       dark: "#A9791C",
     },
     grey: gray,
+
     // grey: {
     //   50: "",
     //   100: "",

@@ -1,7 +1,9 @@
-import ClientOnlyLayout from "@/components/ClientOnlyLayout";
 import esteadadFont from "@/theme/localFonts";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 import "./globals.css";
+import ClientOnlyLayout from "@/components/ClientOnlyLayout";
+import DrawerAppBar from "@/components/appbare/Appbare";
+import { Toolbar } from "@mui/material";
 
 export const metadata = {
   title: "Create Next App",
@@ -11,11 +13,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fa" dir="rtl">
-      <body className={`${esteadadFont.variable}`}>
-        <AppRouterCacheProvider options={{ enableCssLayer: true }}>
-          <ClientOnlyLayout>{children}</ClientOnlyLayout>
-        </AppRouterCacheProvider>
-      </body>
+      <AppRouterCacheProvider options={{ enableCssLayer: true }}>
+        <ClientOnlyLayout>
+          <body className={`${esteadadFont.variable}`}>
+            <DrawerAppBar />
+            <Toolbar />
+
+            {children} 
+            
+            </body>
+        </ClientOnlyLayout>
+      </AppRouterCacheProvider>
     </html>
   );
 }
