@@ -3,7 +3,7 @@
 import { gray } from "@/theme/color";
 import IconButtonCustome from "@/ui/IconButtonCustome";
 import MenuCustom from "@/ui/MenuCustom";
-import MenuIcon from "@mui/icons-material/Menu";
+import MenuOpenOutlinedIcon from "@mui/icons-material/MenuOpenOutlined";
 import SearchIcon from "@mui/icons-material/Search";
 import { Container, Slide, useScrollTrigger } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
@@ -26,8 +26,10 @@ import NavLink from "../NavLink";
 import { navItems } from "./datamenu";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
+import Logomobilemenu from "../../../public/img/mobile/top Frame.svg";
+import NestedList from "./ListmenuMobile";
 
-const drawerWidth = 240;
+const drawerWidth = 256;
 
 function DrawerAppBar(props) {
   const { window } = props;
@@ -55,34 +57,34 @@ function DrawerAppBar(props) {
 
   HideOnScroll.propTypes = {
     children: PropTypes.element,
-    /**
-     * Injected by the documentation to work in an iframe.
-     * You won't need it on your project.
-     */
     window: PropTypes.func,
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Box sx={{ my: 2 }}>
-        <Image src={logo} alt="logo" />
+    <Box>
+      <Box onClick={handleDrawerToggle}>
+        <Image
+          alt="Logomobilemenu"
+          src={Logomobilemenu}
+          quality={90}
+          style={{
+            objectFit: "cover",
+          }}
+        />
       </Box>
-      <Divider />
-      <List>
+      {/* <Divider /> */}
+      {/* <List>
         {navItems.map((item) => (
           <ListItem key={item.id} disablePadding>
-            {item.list ? (
-              "sss"
-            ) : (
-              <NavLink path={item.linknav}>
-                <ListItemButton sx={{ textAlign: "center" }}>
-                  <ListItemText primary={item.title} />
-                </ListItemButton>
-              </NavLink>
-            )}
+            <NavLink path={item.linknav}>
+              <ListItemButton>
+                <ListItemText primary={item.title} />
+              </ListItemButton>
+            </NavLink>
           </ListItem>
         ))}
-      </List>
+      </List> */}
+      <NestedList navItems={navItems} />
     </Box>
   );
 
@@ -103,7 +105,7 @@ function DrawerAppBar(props) {
                   onClick={handleDrawerToggle}
                   sx={{ mr: 2, display: { lg: "none" } }}
                 >
-                  <MenuIcon />
+                  <MenuOpenOutlinedIcon />
                 </IconButton>
 
                 <Box sx={{ display: { xs: "none", lg: "block" } }}>
