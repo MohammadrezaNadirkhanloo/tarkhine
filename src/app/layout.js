@@ -4,6 +4,7 @@ import "./globals.css";
 import ClientOnlyLayout from "@/components/ClientOnlyLayout";
 import DrawerAppBar from "@/components/appbare/Appbare";
 import { Toolbar } from "@mui/material";
+import Footer from "@/components/footer/Footer";
 
 export const metadata = {
   title: "Create Next App",
@@ -18,10 +19,9 @@ export default function RootLayout({ children }) {
           <body className={`${esteadadFont.variable}`}>
             <DrawerAppBar />
             <Toolbar />
-
-            {children} 
-            
-            </body>
+            <div className="main-body">{children}</div>
+            <Footer />
+          </body>
         </ClientOnlyLayout>
       </AppRouterCacheProvider>
     </html>

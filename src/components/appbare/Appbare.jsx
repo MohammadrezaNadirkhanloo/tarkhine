@@ -72,18 +72,6 @@ function DrawerAppBar(props) {
           }}
         />
       </Box>
-      {/* <Divider /> */}
-      {/* <List>
-        {navItems.map((item) => (
-          <ListItem key={item.id} disablePadding>
-            <NavLink path={item.linknav}>
-              <ListItemButton>
-                <ListItemText primary={item.title} />
-              </ListItemButton>
-            </NavLink>
-          </ListItem>
-        ))}
-      </List> */}
       <NestedList navItems={navItems} />
     </Box>
   );
