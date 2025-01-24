@@ -10,3 +10,25 @@ body {
 .main-body {
   flex-grow: 1;
 }
+
+/* style Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #07101d;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to top, #294F36, #4E9968, #294F36);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #417F56;
+}
