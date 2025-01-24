@@ -62,19 +62,19 @@ export const navItems = [
   {
     id: 4,
     title: "اعطای نمایندگی",
-    linknav: "",
+    linknav: "/agency",
     list: false,
   },
   {
     id: 5,
     title: "درباره ما",
-    linknav: "",
+    linknav: "/about",
     list: false,
   },
   {
     id: 6,
     title: "تماس با ما",
-    linknav: "",
+    linknav: "/contact",
     list: false,
   },
 ];
