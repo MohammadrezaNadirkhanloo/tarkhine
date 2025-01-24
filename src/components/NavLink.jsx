@@ -4,7 +4,7 @@ import { Link as MuiLink } from "@mui/material";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-function NavLink({ path, children }) {
+function NavLink({ path, children, full = true, ...prop }) {
   const pathname = usePathname();
   return (
     <MuiLink
@@ -17,10 +17,11 @@ function NavLink({ path, children }) {
         textUnderlineOffset: "10px",
         fontWeight: pathname === path ? 700 : 500,
         transition: "all 0.5s ease",
-        width: "100%",
+        width: full ? "100%" : "auto",
         "&:hover": {
           color: shades.primary,
         },
+        ...prop,
       }}
     >
       {children}

@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "سوالات متداول",
-  description: "سوالات متداول",
+  title: "دسترسی آسان",
+  description: "سوالات متداول | قوانین | حریم خصوصی",
 };
 
 export default function RootLayout({ children }) {

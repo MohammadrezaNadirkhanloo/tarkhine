@@ -1,7 +1,7 @@
 export const Access = [
   {
     id: 1,
-    title: "پرسش‌های متداول",
+    title: "سوالات متداول",
     href: "/faq",
   },
   {
