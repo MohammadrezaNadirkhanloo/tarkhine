@@ -1,4 +1,3 @@
-import { gray } from "@/theme/color";
 import Link from "next/link";
 
 function LinkCustom({ href, children, ...prop }) {

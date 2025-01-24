@@ -1,14 +1,14 @@
-import * as React from "react";
+import { gray } from "@/theme/color";
+import ExpandLess from "@mui/icons-material/ExpandLess";
+import ExpandMore from "@mui/icons-material/ExpandMore";
+import { Divider } from "@mui/material";
+import Collapse from "@mui/material/Collapse";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
-import Collapse from "@mui/material/Collapse";
-import ExpandLess from "@mui/icons-material/ExpandLess";
-import ExpandMore from "@mui/icons-material/ExpandMore";
+import * as React from "react";
 import NavLink from "../NavLink";
-import { gray } from "@/theme/color";
-import { Divider } from "@mui/material";
 
 export default function NestedList({ navItems }) {
   const [openMenu, setOpenMenu] = React.useState({});

@@ -1,5 +1,9 @@
 "use client";
 
+import { gray } from "@/theme/color";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import TelegramIcon from "@mui/icons-material/Telegram";
+import TwitterIcon from "@mui/icons-material/Twitter";
 import {
   Box,
   Container,
@@ -7,18 +11,11 @@ import {
   Typography,
   useMediaQuery,
 } from "@mui/material";
-import React from "react";
+import Grid from "@mui/material/Grid2";
+import Image from "next/image";
 import footerimg from "../../../public/img/footer.png";
 import footerimgMobile from "../../../public/img/mobile/footerMobile.png";
-import Image from "next/image";
-import { gray } from "@/theme/color";
-import Grid from "@mui/material/Grid2";
-import Link from "next/link";
 import LinkCustom from "../LinkCustom";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import TelegramIcon from "@mui/icons-material/Telegram";
-import TextAreaCustom from "@/ui/TextareaCustom";
 import { Access, Branch } from "./dataFooter";
 import ListcustomFooter from "./ListcustomFooter";
 

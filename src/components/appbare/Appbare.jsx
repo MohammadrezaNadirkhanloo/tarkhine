@@ -4,29 +4,24 @@ import { gray } from "@/theme/color";
 import IconButtonCustome from "@/ui/IconButtonCustome";
 import MenuCustom from "@/ui/MenuCustom";
 import MenuOpenOutlinedIcon from "@mui/icons-material/MenuOpenOutlined";
+import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import SearchIcon from "@mui/icons-material/Search";
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import { Container, Slide, useScrollTrigger } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
-import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
 import Toolbar from "@mui/material/Toolbar";
 import Image from "next/image";
 import PropTypes from "prop-types";
 import * as React from "react";
 import logo from "../../../public/img/Logo.svg";
 import logomobile from "../../../public/img/Logomobile.svg";
+import Logomobilemenu from "../../../public/img/mobile/top Frame.svg";
 import NavLink from "../NavLink";
 import { navItems } from "./datamenu";
-import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
-import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
-import Logomobilemenu from "../../../public/img/mobile/top Frame.svg";
 import NestedList from "./ListmenuMobile";
 
 const drawerWidth = 256;
@@ -41,9 +36,6 @@ function DrawerAppBar(props) {
 
   function HideOnScroll(props) {
     const { children, window } = props;
-    // Note that you normally won't need to set the window ref as useScrollTrigger
-    // will default to window.
-    // This is only being set here because the demo is in an iframe.
     const trigger = useScrollTrigger({
       target: window ? window() : undefined,
     });

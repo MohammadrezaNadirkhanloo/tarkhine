@@ -1,8 +1,8 @@
 "use client";
+import { gray, shades } from "@/theme/color";
+import { Link as MuiLink } from "@mui/material";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Link as MuiLink } from "@mui/material";
-import { gray, shades } from "@/theme/color";
 
 function NavLink({ path, children }) {
   const pathname = usePathname();
@@ -17,7 +17,7 @@ function NavLink({ path, children }) {
         textUnderlineOffset: "10px",
         fontWeight: pathname === path ? 700 : 500,
         transition: "all 0.5s ease",
-        width:"100%",
+        width: "100%",
         "&:hover": {
           color: shades.primary,
         },
