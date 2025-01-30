@@ -8,7 +8,7 @@ import slider from "../../../../../public/img/Sliderabout.png";
 import pictureMobile from "../../../../../public/img/mobile/Imageaboutbody-mobile.png";
 import sliderMobile from "../../../../../public/img/mobile/Slideraboutmobile.png";
 import PageCustomHeader from "../_components/PageCustom";
-import CardAbout from "../_components/CardAbout";
+import CardAbout from "./_components/CardAbout";
 
 function About() {
   return (
