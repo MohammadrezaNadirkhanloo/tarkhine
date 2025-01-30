@@ -4,13 +4,7 @@ import { gray } from "@/theme/color";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import {
-  Box,
-  Container,
-  TextField,
-  Typography,
-  useMediaQuery,
-} from "@mui/material";
+import { Box, Container, Typography, useMediaQuery } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import Image from "next/image";
 import footerimg from "../../../public/img/footer.png";
