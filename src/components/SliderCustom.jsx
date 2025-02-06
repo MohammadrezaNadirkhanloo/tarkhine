@@ -81,14 +81,10 @@ function SliderCustom() {
         creativeEffect={{
           prev: {
             shadow: true,
-            origin: "left center",
-            translate: ["-5%", 0, -200],
-            rotate: [0, 100, 0],
+            translate: ['-20%', 0, -1],
           },
           next: {
-            origin: "right center",
-            translate: ["5%", 0, -200],
-            rotate: [0, -100, 0],
+            translate: ['100%', 0, 0],
           },
         }}
         style={{

@@ -33,6 +33,9 @@ body {
   background: #417f56;
 }
 
+
+
+/* Slider */
 .swiper {
   width: 1440px;
   height: 326px;
@@ -40,34 +43,31 @@ body {
 
 .swiper-pagination {
   position: absolute;
-  left: 50% !important; /* وسط قرار دادن از سمت چپ */
-  transform: translateX(-50%) !important; /* تنظیم برای مرکز دقیق */
+  left: 50% !important;
+  transform: translateX(-50%) !important; 
   padding: 7px !important;
   width: 154px !important;
   height: 30px !important;
-  bottom: 0 !important; /* فاصله از پایین */
-  background-image: url("../../public/img/ElipseGroup.svg"); /* مسیر تصویر */
-  background-size: cover; /* متناسب کردن تصویر */
-  background-position: center; /* مرکز کردن تصویر */
+  bottom: 0 !important; 
+  background-image: url("../../public/img/ElipseGroup.svg"); 
+  background-size: cover; 
+  background-position: center; 
 }
 
 @media (max-width: 600px) {
   .swiper-pagination {
-    background-image: url("../../public/img/mobile/ElipseGroup-mobile.svg"); /* تصویر جایگزین برای صفحه‌های کوچک */
-    width: 82px !important;
+    background-image: url("../../public/img/mobile/ElipseGroup-mobile.svg"); 
     height: 19px !important;
     padding: 0px 10px !important;
   }
 }
 
-/* استایل پیش‌فرض برای اسلایدر */
 .mySwiper {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
 
-/* برای موبایل */
 @media (max-width: 600px) {
   .mySwiper {
     width: 360px !important;
@@ -75,7 +75,6 @@ body {
   }
 }
 
-/* برای دسکتاپ */
 @media (min-width: 769px) {
   .mySwiper {
     max-width: 1445px !important;
