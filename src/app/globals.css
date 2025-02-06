@@ -21,7 +21,7 @@ body {
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(to top, #294F36, #4E9968, #294F36);
+  background-image: linear-gradient(to top, #294f36, #4e9968, #294f36);
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -30,5 +30,55 @@ body {
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #417F56;
+  background: #417f56;
+}
+
+.swiper {
+  width: 1440px;
+  height: 326px;
+}
+
+.swiper-pagination {
+  position: absolute;
+  left: 50% !important; /* وسط قرار دادن از سمت چپ */
+  transform: translateX(-50%) !important; /* تنظیم برای مرکز دقیق */
+  padding: 7px !important;
+  width: 154px !important;
+  height: 30px !important;
+  bottom: 0 !important; /* فاصله از پایین */
+  background-image: url("../../public/img/ElipseGroup.svg"); /* مسیر تصویر */
+  background-size: cover; /* متناسب کردن تصویر */
+  background-position: center; /* مرکز کردن تصویر */
+}
+
+@media (max-width: 600px) {
+  .swiper-pagination {
+    background-image: url("../../public/img/mobile/ElipseGroup-mobile.svg"); /* تصویر جایگزین برای صفحه‌های کوچک */
+    width: 82px !important;
+    height: 19px !important;
+    padding: 0px 10px !important;
+  }
+}
+
+/* استایل پیش‌فرض برای اسلایدر */
+.mySwiper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* برای موبایل */
+@media (max-width: 600px) {
+  .mySwiper {
+    width: 360px !important;
+    height: 176px !important;
+  }
+}
+
+/* برای دسکتاپ */
+@media (min-width: 769px) {
+  .mySwiper {
+    max-width: 1445px !important;
+    height: 336px !important;
+  }
 }
